@@ -54,19 +54,66 @@
 	  </div>
 	</nav>
 
-	<!-- Research Section -->
-	<section id="Research" class="about-section text-center">
+	<!-- about Section -->
+	<section id="about" class="about-section">
 	  <div class="container">
 		<div class="row">
 		  <div class="col-lg-8 mx-auto">
-			<h2 class="text-white mb-4"></h2>
-			<p class="text-white-50"> There were x main areas that we needed to research.
-				<ol>
-					<li>How to implement a user registeration system</li>
-					<li>How to pull data from the Fitbit using it's API</li>
-					<li>Whether this project needs a blockchain technology implementation.</li>
-				</ol>
-			  </p>
+			<h2 class="text-white mb-4 text-center">Topics being researched</h2>
+			<p class="text-white-50">
+				</p>
+<!-- 					<h4 class="text-white mb-4">1. Creating a user registeration system.</h4> -->
+
+					<!-- <p class="text-white-50"> </p> -->
+
+					
+					<h4 class="text-white mb-4">1. Achieving decentralized data storage using a new emerging technology, Solid Inrupt.</h4>
+					
+					<p class="text-white-50">At first, we thought we were going to use blockchain for this project as suggested by our client, but after a lot of research we found an alternate solution to blockchain which is Solid Inrupt. <br><br>
+
+					How is a blockchain database different from a regular database? <br><br>
+
+					After doing research and reading few articles (links will be put here) we came with these few conclusions: 
+
+					<ol class="text-white-50">
+						<li>“If confidentiality is the only goal, and trust is not an issue, blockchain databases pose no advantage over a centralized database”</li>
+
+						<li>
+							“A blockchain is a distributed ledger that can be used between parties that don’t trust each other with data”
+						</li>
+
+						<li><img src="img/block.png" alt="pic" height="420" width="520" class="center" ></li>
+						<br>
+						<li>
+							<ol>
+						a. Traditional Databases:<br><br>	 
+		-	Client-Server Network architectures <br>
+		-	User modifies data <br>
+		-	Data is stored on one server <br>
+		-	Control of database only managed by a single entity
+			Database allows create, read, update and delete operations <br><br>
+
+		b. Blockchain Databases:<br><br>
+		-	Several decentralized nodes <br>
+		-	All nodes verify additions to the database <br>
+		-	Append only <br>
+		-	Once entries are made, they can’t be altered or delete <br>
+						</ol>
+						</li>
+					</ol>
+					<p class="text-white-50">
+					Conclusion: <br><br>
+
+	Although a blockchain database would be useful in some applications, in the case of FHIR FLI version 2.0 it won’t be useful or needed due to the reasons stated above. For instance, it is mainly used when there are trust issues between parties using the database which isn’t the case here. It only allows appending of data and doesn’t allow its modification which is a negative feature in this case since we need to allow the user to modify his data as password. Also, a database implementation offers an advantage in terms of speed and efficiency.<br><br> Finally, there is no need of several people/users managing the blockchain database and this isn’t a feasible solution, in this case we only need one server/entity managing the database which aligns with the regular database implementation.<br><br>
+
+	<img src="img/Unknown.png" alt="pic" height="320" width="320" class="mine" >
+</p>
+	<h4 class="text-white mb-4">2. Pulling data from the Fitbit using the Fitbit API.</h4>
+					
+					<p class="text-white-50"> Still under progress </p>
+
+
+					</p>
 		  </div>
 		</div>
 	  </div>

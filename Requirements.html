@@ -54,50 +54,39 @@
 	  </div>
 	</nav>
 
-	
-	<!-- <section id="Requirements" class="about-section text-center">
+	<!-- about Section -->
+	<section id="about" class="about-section ">
 	  <div class="container">
 		<div class="row">
 		  <div class="col-lg-8 mx-auto">
-			<h2 class="text-white mb-4">Requiremenets</h2>
-			<p>
-				<ol>
-					<li>Implement a dashboard with signin - signup system.</li>
-					<li>Dashboard must be personlized and customised to every user.</li>
-					<li>Implement data exchange between electronic devices like fitbit and FHIR FLI web app.</li>
-				</ol>
+			
+			<!-- <h4 class="text-white mb-4">Background</h4>
+			<p class="text-white-50 text">With the development of healthcare industry, people put more and more attention on their heath status. Huge amount of health data is gathered from various approaches, such as gym, wearable equipments, etc, However, it's quite hard for users to take these data to use today. For example, if they want to show their data to doctors, they need to print them and bring the paper to hospital. In order to make it easier, we have this project.
 			</p>
+			<h4 class="text-white mb-4">Goals</h4>
+			<p class="text-white-50 text">This project aims to unify and gather the health data form and display it by a platform. The graph should be personlized according to users' needs, and the data should be able to gathered from different resources and be transformed into a unified version. For further consideration, We aim to implement a decentralized data storage with Solid Inrupt.
+			</p> -->
+			<h4 style="color:white;">MoSCoW Requirements List</h4><br>
+			<h5 style="color:white;">Must</h5>
+				<ul style="color:grey;">
+					<li>Full fledged working login system (User sign-in & sign-up).</li>
+					<li>Users must be able to see data from the Fitbit in a visualised and interesting way.</li>
+				</ul>
+				<p style="color:green;">Users must be able to signup on the FHIR FLI web application, login using their credentials to a dashboard that presents their health and lifestyle data using graphs, the dashboard also allows user to add certain health goals</p>
+			
+			<h5 style="color:white;">Should</h5>
+			
+				<ul style="color:grey;">
+					<li>Personlized dashboard according to the personality of the user</li><br>
+					<p style="color:green;">The user will be presented with a set of personality questions that will determine what information that user prefers to see and cares about and therefore according to his answers, some information will be filtered out and some will be highlighted</p>
+					<li>Docker-container to make deployment easier for future development</li>
+					<li>More complex and decentralized user data storage system using Solid</li>
+				</ul>
+				
 		  </div>
 		</div>
 	  </div>
-	</section> -->
-
-
-	<!-- Projects Section -->
-    <section id="projects" class="projects-section bg-light">
-      <div class="container">
-
-        <!-- Featured Project Row -->
-        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-          <div class="col-xl-8 col-lg-7">
-            <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
-          </div>
-          <div class="col-xl-4 col-lg-5">
-            <div class="featured-text text-center text-lg-left">
-              <h4>Requirements</h4>
-              <p class="text-black-50 mb-0"><ol>
-					<li>Implement a dashboard with signin - signup system.</li>
-					<li>Dashboard must be personlized and customised to every user.</li>
-					<li>Implement data exchange between electronic devices like fitbit and FHIR FLI web app.</li>
-				</ol></p>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-    </section>
-
+	</section>
 
 	<!-- Footer -->
 	<footer class="bg-black small text-center text-white-50">
@@ -115,7 +104,7 @@
 
 	<!-- Custom scripts for this template -->
 	<script src="js/grayscale.min.js"></script>
-	
+
 </body>
 
 </html>
