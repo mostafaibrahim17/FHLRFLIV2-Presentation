@@ -8,7 +8,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Prototype</title>
+	<title>Design</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -35,19 +35,28 @@
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 		  <ul class="navbar-nav ml-auto">
 			<li class="nav-item">
-			  <a class="nav-link js-scroll-trigger" href="index.html">About</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link js-scroll-trigger" href="Research.html">Research</a>
+			  <a class="nav-link js-scroll-trigger" href="#about">About</a>
 			</li>
 			<li class="nav-item">
 			  <a class="nav-link js-scroll-trigger" href="Requirements.html">Requirements</a>
 			</li>
 			<li class="nav-item">
+			  <a class="nav-link js-scroll-trigger" href="Research.html">Research</a>
+			</li>
+			<li class="nav-item">
 			  <a class="nav-link js-scroll-trigger" href="HCI.html">HCI</a>
 			</li>
 			<li class="nav-item">
-			  <a class="nav-link js-scroll-trigger" href="Prototype.html">Prototype</a>
+			  <a class="nav-link js-scroll-trigger" href="Design.html">Design</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link js-scroll-trigger" href="Testing.html">Testing</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link js-scroll-trigger" href="Evaluation.html">Evaluation</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link js-scroll-trigger" href="Management.html">Management</a>
 			</li>
 		  </ul>
 		</div>
@@ -60,25 +69,44 @@
 	  <div class="container">
 		<div class="row">
 		  <div class="col-lg-8 mx-auto">
-			<h2 class="text-white mb-4">Prototype</h2><br>
-				<h3 class="text-white mb-4">System Architecture Design</h3>
+			<h1 class="text-white mb-4">System Architecture Design</h1><br>
 				<img src="img/mern stack development.png" alt="Snow" height="420" width="920" style="width:100%"><br><br><br><br>
 
-				<h2 class="text-white mb-4">Introduction to MERN Stack</h3>
+				<h3 class="text-white mb-4">Introduction to MERN Stack</h3>
 					<p class="text-white-50"> MERN is merely an acronym standing for MongoDB, Express.js, React, and Node.js.The entire thing is written in Javascript. The powerful front-end framework, sits at the heart of the stack and is built using a Model-View-Controller design pattern, MongoDB is a NoSQL database management system. </p>
 
-				<h2 class="text-white mb-4">Front-end Development</h3>
+				<h3 class="text-white mb-4">Front-end Development</h3>
 					<p class="text-white-50"> React provides the reactive user interface of your application. React utilizes components, which are reactive in that the user gets immediate feedback as it interacts with the application, and typically run within a user’s browser (although it is isomorphic, capable of being run on a backend server). Without going into too much detail, the frontend framework or library in the stack ultimately (typically) takes the data from the server and presents it in a reactive and interactive user interface.
 					</p>
 
-				<h2 class="text-white mb-4">Back-end Development</h3>
+				<h3 class="text-white mb-4">Back-end Development</h3>
 					<p class="text-white-50"> The most simple definition, Node.js is Javascript outside of a browser. Node provides a runtime environment for Javascript, much like a browser, but in its own world. In a browser setting, Javascripts must be loaded into an HTML page and that HTML page must be opened in the browser in order to interact with the Javascript. In the Node environment, the HTML middle-man is removed and Javascript files can interact with one another through acting as node modules. Javascript files must meet certain module standards, and then can be loaded into other files through the require keyword. NPM is the default package manager, and allow developers access to tons of third party modules in addition to the ones they create in their own application. </p>
 
-				<h2 class="text-white mb-4">Database Management</h3>	
+				
+
+			<h1 class="text-white mb-4">Design Patterns</h1><br>
+
+			<h1 class="text-white mb-4">Data Storage</h1><br>
+
+				<h3 class="text-white mb-4">Database Management</h3>	
 					<p class="text-white-50"> MongoDB, as previously mentioned, is one of the most popular NoSQL database management systems. It is document-oriented, has a flexible schema, and has a JSON based query language. Mongo, as is characteristic of a non-relational database is that it doesn’t rely on columns and rows. This removes an imperative aspect of dealing with relational databases: Object Relational Mapping layers. Because data is stored in rows and columns in relational databases, the programmer must format the result of a query into a usable-programming object (think: serializing an ActiveRecord relationship to convert it into JSON). </p>
 
-				<h2 class="text-white mb-4">Implementation of the User Registeration System</h3>	
+			<h1 class="text-white mb-4">Implementation of key functionalities</h1><br>
+
+				<h3 class="text-white mb-4">User Registeration System</h3>	
 					<p class="text-white-50"> The MERN stack authentication system uses a User model as the data structure that stores the user's credentials as email and password, it uses the mongoose library schema. After the user signs in, bcrypt js is used to encrypt the password before it is stored in the database. And there are also several checks such as if the user already exists or he has entered an email in the wrong format. </p>
+
+				<h3 class="text-white mb-4">Decentralised Data Storage System</h3>
+
+				<h3 class="text-white mb-4">Fitbit FHiR API & Visualisations</h3>
+
+				<h3 class="text-white mb-4">Docker</h3>
+
+				<h3 class="text-white mb-4">Front-end design</h3>
+		</div>
+	</div>
+</div>
+</section>
 
 	<!-- Bootstrap core JavaScript -->
 	<script src="vendor/jquery/jquery.min.js"></script>
