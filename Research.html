@@ -63,75 +63,86 @@
 	  </div>
 	</nav>
 
-	<!-- about Section -->
-	<section id="about" class="about-section">
-	  <div class="container">
-		<div class="row">
-		  <div class="col-lg-8 mx-auto">
-				
-				<strong><h1 style="color:#729E9D"><img src="img/MostafaIcons_ResearchIcon.png" alt="pic" height="75" width="75" class="img-fluid" hspace="15"> RESEARCH</h1></strong>
-			<p class="text-white-50">
-				</p>
-					<!--<h4 class="text-white mb-4">1. Creating a user registeration system.</h4> -->
+<!-- about Section -->
+<section id="about" class="about-section">
+<div class="container">
+<div class="row">
+	<div class="col-lg-8 mx-auto">
+	
+	<strong><h1 style="color:#729E9D"><img src="img/MostafaIcons_ResearchIcon.png" alt="pic" height="75" width="75" class="img-fluid" hspace="15"> RESEARCH</h1></strong><br>
 
-					<!-- <p class="text-white-50"> </p> -->
+		<!--<h4 class="text-white mb-4">1. Creating a user registeration system.</h4> -->
 
-					
-					<h4 class="text-white mb-4">1. Achieving decentralized data storage using a new emerging technology, Solid Inrupt.</h4>
-					
-					<p class="text-white-50">At first, we thought we were going to use blockchain for this project as suggested by our client, but after a lot of research we found an alternate solution to blockchain which is Solid Inrupt. <br><br>
-					How is a blockchain database different from a regular database? <br><br>
-					After doing research and reading few articles (links will be put here) we came with these few conclusions: 
+		<!-- <p class="text-white-50"> </p> -->
 
-					<ol class="text-white-50">
-						<li>“If confidentiality is the only goal, and trust is not an issue, blockchain databases pose no advantage over a centralized database” <span style="color:red;">[1]</span></li><br>
+		<h5 class="text-white mb-4"><span style="color:#729E9D; font-weight:bold">1.</span> Achieving decentralized data storage using a new emerging technology, Solid Inrupt.</h5>
+		
+		<span class="text-white-50">At first, we thought we were going to use blockchain for this project as suggested by our client, 
+			but after a lot of research we found an alternate solution to blockchain which is Solid Inrupt. <br><br>
+		How is a blockchain database different from a regular database? <br><br>
+		After doing research and reading few articles (links will be put here) we came with these few conclusions: 
+			</span><br><br>
+		<ol style="color:#729E9D">
+			<span style="color:grey">
+			<li style="color:#729E9D; font-weight:bold" > <span style="color:grey; font-weight:normal ">“If confidentiality is the only goal, and trust is not an issue, 
+				blockchain databases pose no advantage over a centralized database” </span><span style="color:#729E9D;">[1]</span></li><br>
 
-						<li>
-							“A blockchain is a distributed ledger that can be used between parties that don’t trust each other with data” <span style="color:red;">[2]</span>
-						</li>
-						<br>
-						<li><img src="img/block.png" alt="pic" height="420" width="520" class="img-fluid" ></li>
-						<br>
-						<li>
-							<ol>
-											a. Traditional Databases:<span style="color:red;">[3]</span><br><br>	 
-							-	Client-Server Network architectures <br>
-							-	User modifies data <br>
-							-	Data is stored on one server <br>
-							-	Control of database only managed by a single entity
-								Database allows create, read, update and delete operations <br><br>
+			<li style="color:#729E9D; font-weight:bold"> <span style="color:grey; font-weight:normal">
+				“A blockchain is a distributed ledger that can be used between parties that don’t trust each other with data” </span><span style="color:#729E9D;">[2]</span>
+			</li><br>
+			
+			<li style="color:#729E9D; font-weight:bold"><img src="img/block.png" alt="pic" height="420" width="520" class="img-fluid" ></li>
+			<br>
 
-							b. Blockchain Databases:<span style="color:red;">[4]</span><br><br>
-							-	Several decentralized nodes <br>
-							-	All nodes verify additions to the database <br>
-							-	Append only <br>
-							-	Once entries are made, they can’t be altered or delete <br>
-						</ol>
-						</li>
-					</ol>
-					<p class="text-white-50">
-					Conclusion: <br><br>
+			<li style="color:#729E9D; font-weight:bold">
+				<ol style="color:#729E9D;">
+				<span style="color:grey; font-weight:normal">	
+						<span style="color:#729E9D; font-weight:bold">	a.</span> Traditional Databases:<span style="color:#729E9D;; font-weight:bold"> [3]</span><br><br>	 
+						<span style="color:#729E9D; font-weight:bold">-</span>	Client-Server Network architectures <br>
+						<span style="color:#729E9D; font-weight:bold">-</span>	User modifies data <br>
+						<span style="color:#729E9D; font-weight:bold">-</span> Data is stored on one server <br>
+						<span style="color:#729E9D; font-weight:bold">-</span>	Control of database only managed by a single entity
+					Database allows create, read, update and delete operations <br><br>
 
-						Although a blockchain database would be useful in some applications, in the case of FHIR FLI version 2.0 it won’t be useful or needed due to the reasons stated above. For instance, it is mainly used when there are trust issues between parties using the database which isn’t the case here. It only allows appending of data and doesn’t allow its modification which is a negative feature in this case since we need to allow the user to modify his data as password. Also, a database implementation offers an advantage in terms of speed and efficiency.<br><br> Finally, there is no need of several people/users managing the blockchain database and this isn’t a feasible solution, in this case we only need one server/entity managing the database which aligns with the regular database implementation.<br><br>
+					<span style="color:#729E9D; font-weight:bold">	b.</span> Blockchain Databases:<span style="color:#729E9D; font-weight:bold"> [4]</span><br><br>
+					<span style="color:#729E9D; font-weight:bold">-</span> Several decentralized nodes <br>
+					<span style="color:#729E9D; font-weight:bold">-</span>	All nodes verify additions to the database <br>
+					<span style="color:#729E9D; font-weight:bold">-</span>	Append only <br>
+					<span style="color:#729E9D; font-weight:bold">-</span>	Once entries are made, they can’t be altered or delete
+			</span>
+			</ol>
+			</li>
+			</span>
+		</ol>
 
-					<img src="img/Unknown.png" alt="pic" height="320" width="320" class="img-fluid" >
-					</p>
-					<h4 class="text-white mb-4">2. Pulling data from the Fitbit using the Fitbit API.</h4>
-					<p class="text-white-50"> Still under progress </p>
-					</p>
+		<span class="text-white-50">
+		 <br><br>
 
-					<h4 class="text-white mb-4">References</h4>
-					<p class="text-white-50"> 
-					[1] <a href="https://www.coindesk.com/information/what-is-the-difference-blockchain-and-database?fbclid=IwAR2VzdEXHArqYUhOsHhXEi_xpeZB7pMfBPlV2e9PUoZfSLk5r0KSAxds8AA">CoinDesk</a><br>
-					[2] <a href="https://coinsutra.com/blockchain-vs-database/">Coinsutra</a><br>
-					[3] <a href="https://hackernoon.com/blockchains-versus-traditional-databases-c1a728159f79">Hackernoon</a><br>
-					[4] <a href="https://www.quora.com/Whats-the-difference-between-blockchain-and-a-database">Qoura</a>
-					
-					</p>
-		  </div>
-		</div>
-	  </div>
-	</section>
+			In conclusion, although a blockchain database would be useful in some applications, in the case of FHIR FLI version 2.0 it won’t be useful or needed due to the reasons stated above. 
+			For instance, it is mainly used when there are trust issues between parties using the database which isn’t the case here. 
+			It only allows appending of data and doesn’t allow its modification which is a negative feature in this case since we need to allow the user to modify his data as password. 
+			Also, a database implementation offers an advantage in terms of speed and efficiency.<br><br> 
+			Finally, there is no need of several people/users managing the blockchain database and this isn’t a feasible solution,
+				in this case we only need one server/entity managing the database which aligns with the regular database implementation.<br><br>
+
+		<img src="img/Unknown.png" alt="pic" height="320" width="320" class="img-fluid" >
+		</span><br><br>
+		<h5 class="text-white mb-4"><span style="color:#729E9D; font-weight:bold">2.</span> Pulling data from the Fitbit using the Fitbit API.</h5>
+		<p class="text-white-50"> Still under progress </p>
+		</p>
+
+		<h4 class="text-white mb-4">References</h4>
+		<p class="text-white-50"> 
+		[1] <a href="https://www.coindesk.com/information/what-is-the-difference-blockchain-and-database?fbclid=IwAR2VzdEXHArqYUhOsHhXEi_xpeZB7pMfBPlV2e9PUoZfSLk5r0KSAxds8AA">CoinDesk</a><br>
+		[2] <a href="https://coinsutra.com/blockchain-vs-database/">Coinsutra</a><br>
+		[3] <a href="https://hackernoon.com/blockchains-versus-traditional-databases-c1a728159f79">Hackernoon</a><br>
+		[4] <a href="https://www.quora.com/Whats-the-difference-between-blockchain-and-a-database">Qoura</a>
+		
+		</p>
+</div>
+</div>
+</div>
+</section>
 
 	<!-- Footer -->
 	<footer class="bg-black small text-center text-white-50">
