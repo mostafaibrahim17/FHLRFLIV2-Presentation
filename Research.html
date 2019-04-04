@@ -71,10 +71,7 @@
 	
 	<strong><h1 style="color:#729E9D"><img src="img/MostafaIcons_ResearchIcon.png" alt="pic" height="75" width="75" class="img-fluid" hspace="15"> RESEARCH</h1></strong><br>
 
-		<!--<h4 class="text-white mb-4">1. Creating a user registeration system.</h4> -->
-
-		<!-- <p class="text-white-50"> </p> -->
-
+		<!-- Decentralized requirement  -->
 		<h5 class="text-white mb-4"><span style="color:#729E9D; font-weight:bold">1.</span> Achieving decentralized data storage using a new emerging technology, Solid Inrupt.</h5>
 		
 		<span class="text-white-50">At first, we thought we were going to use blockchain for this project as suggested by our client, 
@@ -127,17 +124,91 @@
 
 		<img src="img/Unknown.png" alt="pic" height="320" width="320" class="img-fluid" >
 		</span><br><br>
-		<h5 class="text-white mb-4"><span style="color:#729E9D; font-weight:bold">2.</span> Pulling data from the Fitbit using the Fitbit API.</h5>
-		<p class="text-white-50"> Still under progress </p>
+
+		<!-- Fitbit requirement  -->
+
+		<h5 class="text-white mb-4"><span style="color:#729E9D; font-weight:bold">2.</span> Fitbit API data visualisations.</h5>
+			<h7 class="text-white mb-4"><span style="color:#729E9D; font-weight:bold"></span> Fitbit Web API </h7>
+		<p class="text-white-50"> Application Programming interfaces are used to add additional functionality to the existing programs usually through communicating with a 3rd party
+			software, in this case the Fitbit servers. Such that, our program sends the Fitbit servers requests for accessing data from Fitbit activity trackers (such as the Fitbit watch). This data is then returned
+			to out program through HTTP requests and it is used in making the visualisations.<br><br>
+			
+			<span><strong>Here is how it works</strong></span><br><br>
+			The Fitbit Web API mainly relies on OAuth 2.0 framework which essentially asks the Fitbit user whether they give consent to FHIR FLI 2.0 to use their personal Fitbit data or not.
+			In some cases specifying exactly what kind of data will be used by FHIR FLI. Here is the main gist of Authorization Code Grant Flow used by OAuth 2.0. <br><br>
+
+			<img src="img/Authorization_Code_Flow.png" alt="pic" height="720" width="620" class="img-fluid" ><br>
+			 <span style="color:#729E9D; font-weight:bold"> [5]</span> <br><br>
+
+			<h7 class="text-white mb-4"><span style="color:#729E9D; font-weight:bold"></span> Converting Fitbit data to FHiR format & Storing it </h7><br><br>
+			<span><strong>What is FHiR</strong></span><br>
+			"Fast Healthcare Interoperability Resources Specification, which is a standard for exchanging healthcare information electronically."
+			<span style="color:#729E9D; font-weight:bold"> [6]</span> <br>
+			Basically, FHiR is a format that most modern health organisations has agreed upon for sharing electronical health data, FHiR has recently become very popular
+			and it a core part of our project.<br><br>
+
+			<span><strong>Converting the data</strong></span><br>
+			After thorough research, we managed to find a Fitbit-FHiR-Converter that was developed in JavaScript. This converter was built on a famous open-source NodeJS
+			library called data-model-mapper-plus which is used to to map (and revert mapping) data objects into another (specified) data model
+			 <span style="color:#729E9D; font-weight:bold"> [7]</span> <br><br>
+			A FHiR database data model was developed according to the FHiR standards such that we would be able to query the database for 
+			data to generate data visualisations, when we use the converter,
+			we had to make sure that the result of the converter was the same as the current FHiR data models 
+			(as their are several variations) and according to our database FHiR data model they were almost identical.<br><br>
+			
+			<img src="img/FHIRHL7.png" alt="pic" height="720" width="720" class="img-fluid" ><br>
+			<img src="img/FHIR.png" alt="pic" height="520" width="720" class="img-fluid" ><br>
+
+
 		</p>
+
+		<!-- Front-end requirement -->
+		<h5 class="text-white mb-4"><span style="color:#729E9D; font-weight:bold">3.</span> Front-end Design.</h5>
+		<p class="text-white-50"> The 3 main technologies considered for the front-end framework were Vue JS, React JS & Angular JS.
+			We also considered several factors that will go into the front-end User Interface and User Experience such that the fact
+		that it will be main an interactive user dashboard that the user will use daily for signing in and checking
+		his health statistics.
+			
+					<!-- * REACT
+
+			* PROS:
+
+			* Virtual DOM and responsive UI 
+					* will boost the core part of our health data dashboard
+			* Very active community on Github and support by large organisations 
+					* will remain active for a relatively long time 
+
+			* Cons:
+			* React is a library not a framework, with fairly complex system of components
+					* that will extend the development time -->
+		</p>
+
+		<!-- Docker requirement -->
+		<h5 class="text-white mb-4"><span style="color:#729E9D; font-weight:bold">4.</span> Docker containers.</h5>
+		<p class="text-white-50"> 
+				Docker is a computer program that performs operating-system-level virtualization. 
+				It was first released in 2013 and is developed by Docker, Inc. Docker is used to run software packages called containers.	
+				<span style="color:#729E9D; font-weight:bold"> [8]</span> <br><br>
+
+
+		</p>
+
+		<!-- Login system requirement -->
+		<h5 class="text-white mb-4"><span style="color:#729E9D; font-weight:bold">5.</span> User authentication system.</h5>
+		<p class="text-white-50"> Still under progress </p>
 
 		<h4 class="text-white mb-4">References</h4>
 		<p class="text-white-50"> 
 		[1] <a href="https://www.coindesk.com/information/what-is-the-difference-blockchain-and-database?fbclid=IwAR2VzdEXHArqYUhOsHhXEi_xpeZB7pMfBPlV2e9PUoZfSLk5r0KSAxds8AA">CoinDesk</a><br>
 		[2] <a href="https://coinsutra.com/blockchain-vs-database/">Coinsutra</a><br>
 		[3] <a href="https://hackernoon.com/blockchains-versus-traditional-databases-c1a728159f79">Hackernoon</a><br>
-		[4] <a href="https://www.quora.com/Whats-the-difference-between-blockchain-and-a-database">Qoura</a>
-		
+		[4] <a href="https://www.quora.com/Whats-the-difference-between-blockchain-and-a-database">Qoura</a> <br>
+		[5] <a href="https://dev.fitbit.com/build/reference/web-api/oauth2/">Fitbit Web API Documentation</a> <br>
+		[6] <a href="https://www.hl7.org/fhir/overview.html">HL7 Organisation</a> <br>
+		[7] <a href="https://www.npmjs.com/package/data-model-mapper-plus">NPM</a> <br>
+		[8] <a href="https://www.hl7.org/fhir/observation.html">HL7 Observation Schema</a> <br> 
+		[9] <a href="https://www.docker.com">Docker Inc</a>
+
 		</p>
 </div>
 </div>
