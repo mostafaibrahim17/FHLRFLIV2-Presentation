@@ -35,7 +35,7 @@
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 		  <ul class="navbar-nav ml-auto">
 			<li class="nav-item">
-			  <a class="nav-link js-scroll-trigger" href="index.html">About</a>
+			  <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
 			</li>
 			<li class="nav-item">
 			  <a class="nav-link js-scroll-trigger" href="Requirements.html">Requirements</a>
@@ -71,6 +71,57 @@
 		  <div class="col-lg-8 mx-auto">
 			<strong><h1 style="color:#729E9D"><img src="img/EvaluationIcon.png" alt="pic" height="75" width="75" hspace="15">EVALUATION</h1></strong><br>
 
+			<h3 style="color:white;">Achievements Table</h3>
+			<span class="text-white-50 text">Table</span><br><br>
+
+			<h3 style="color:white;">Individual Contribution Table</h3>
+			<span class="text-white-50 text">Table</span><br><br>
+
+			<h3 style="color:white;">Bugs</h3>
+			<span class="text-white-50 text">Here is a list of known bugs, and areas where certain functionalities aren't working as intended
+				<uL>
+					<li>Adding company</li>
+				</uL>
+			</span><br><br>
+
+
+				<h3 style="color:white;">Future Work</h3>
+				<span class="text-white-50 text">This section is about features that we wanted to implement but didn't have enough 
+					to implement due to time constraints, however, for future developers it is fairly easy to start where we stopped.<br><br>
+					<ul>
+						<li>Improve the design of the user's dashboard, this is due to the fact that the current design is fairly minimalistic
+							and doesn't adhere to modern data visualisations dashboards, we worked on this by improving the login and registeration
+							page, but we didn't improve the user's dashboard.
+						</li><br><br>
+						<li>
+							Improve the decentralised data storage system, this was one of our most challenging requirements, at the beginning 
+							we attempted the implementation of Solid inrupt (can be found here <a href="https://solid.inrupt.com ">Solid Inrupt</a>)
+							but we couldn't finish certain parts due to lacking documentation and support, however, there are a lot of useful information
+							that will certainly help that can be found on our Research tab, also here is a general outline of what needs to be done 
+							<ol>
+								<li>Implement solid-auth which is a JS browser library that allows users to authenticate access to their Solid PODS,
+									this can be found here <a href="https://github.com/solid/solid-auth-client">solid-auth</a>
+								</li>
+								<li>After doing that, integrate the rdflib NodeJS library on the backend, this can be found here 
+									<a href="https://www.npmjs.com/package/rdflib">rdlib</a>, this is based on manipulating linked data which is the 
+									essential foundation of Solid inrupt, this is the part where the actual writing data process is done to the users 
+									Solid Pods
+								</li>
+							</ol>
+						</li><br><br>
+
+						<li>Design more distinct graphs for representing the Fitbit data, the best library for doing this is 
+							<a href="https://formidable.com/open-source/victory/">Victory JS</a>, you will find that our codebase is
+						designed to facilitate the use of this library. </li><br><br>
+
+						<li>Integrate the goals system with the Fitbit data</li>
+
+					</ul>
+				</span><br><br>
+
+				<br><br><br><br><br><br><br><br><br><br>
+				
+				
 				
 				</div>
 			</div>

@@ -45,7 +45,7 @@
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 		  <ul class="navbar-nav ml-auto">
 			<li class="nav-item">
-			  <a class="nav-link js-scroll-trigger" href="index.html">About</a>
+			  <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
 			</li>
 			<li class="nav-item">
 			  <a class="nav-link js-scroll-trigger" href="Research.html">Research</a>
@@ -96,13 +96,16 @@
 					<li>The system must have a fully working authentication system where users 2 types of users can signup and sign in</li>
 					<ul><li>Corporate users</li><li>Individual users</li></ul><br>
 					<li>The system must be able to query data from the Fitbit API</li>
+					<li>System must be using HTTPS to allow Fitbit authentication </li>
 					<li>The system must be able acquire distinct types of data from the Fitbit API such as </li>
-					<ul><li>Heart data</li><li>Activites</li><li>Body Weight</li><li>Sleep data</li></ul><br>
+					<ul><li>Heart data</li><li>Activities</li><li>Body Weight</li><li>Sleep data</li></ul><br>
 					<li>The system must be able to convert the Fitbit data to the FHiR format</li>
+					<li>The design of the login page and the signup page must be improved (from FHiR Fli 1.0)</li>
 					<li>The system must be able to store the FHiR data in a database either locally or a decentralized database</li>
-					<li>Their must be a custom made API to grab the data from the database and represent the statistics as graphs such as</li>
-					<ul><li>Line graph</li><li>Goal Rings</li><li>Line Graph</li><li>Bar Graph</li><li>Doughnut visualization</li><li>Clock View</li></li></ul>
-					<li>The data must be real-time data, i.e it must be refreshed every short period of time</li>
+					<li>Their must be a custom made API to grab the data from the database and represent the weekly statistics as graphs such as</li>
+					<ul><li>BrushLineGraph for Weight & BMI</li><li>Barchart for average heart rate in certain ranges</li></ul>
+					<!-- <ul><li>Line graph</li><li>Goal Rings</li><li>Line Graph</li><li>Bar Graph</li><li>Doughnut visualization</li><li>Clock View</li></li></ul> -->
+					<!-- <li>The data must be real-time data, i.e it must be refreshed every short period of time</li> -->
 				</ul><br>
 
 			
@@ -110,20 +113,20 @@
 			
 				<ul style="color:grey;">
 					<li>Personlized dashboard according to the personality of the user</li>
-					<p style="color:#729E9D;">The user will be presented with a set of personality questions that will determine what information that user prefers to see and cares about and therefore according to his answers, some information will be filtered out and some will be highlighted</p>
+					<!-- <p style="color:#729E9D;">The user will be presented with a set of personality questions that will determine what information that user prefers to see and cares about and therefore according to his answers, some information will be filtered out and some will be highlighted</p> -->
 					
 					<li>More complex and decentralized user data storage system using Solid</li>
 
-					<p style="color:#729E9D;">This can help making storing the users data much more efficient and gives users the ownership of data due to the fact that Solid inrupt offers decentralized databases.</p>
+					<!-- <p style="color:#729E9D;">This can help making storing the users data much more efficient and gives users the ownership of data due to the fact that Solid inrupt offers decentralized databases.</p> -->
 
 				</ul>
 
 				<h5 style="color:white;">Could</h5>
 
 				<ul style="color:grey;">
-					<li>Docker-container to make deployment easier for future development</li>
+					<li>Implement Docker containers to make deployment easier for future development</li>
 
-						<p style="color:#729E9D;">Deploying this web application and getting it running to start developing it can be tricky and very time-consuming, and so an excellent idea would be to implement a docker container that makes deployment much more simple.</p>
+						<p style="color:grey;">Deploying this web application and getting it running to start developing it can be tricky and very time-consuming, and so an excellent idea would be to implement a docker container that makes deployment much more simple.</p>
 				</ul>
 
 				<h4 style="color:white;">Persona</h4><br>

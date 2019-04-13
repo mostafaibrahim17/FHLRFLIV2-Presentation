@@ -35,7 +35,7 @@
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 		  <ul class="navbar-nav ml-auto">
 			<li class="nav-item">
-			  <a class="nav-link js-scroll-trigger" href="index.html">About</a>
+			  <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
 			</li>
 			<li class="nav-item">
 			  <a class="nav-link js-scroll-trigger" href="Requirements.html">Requirements</a>
@@ -97,11 +97,18 @@
 				<h3 class="text-white mb-4">User Registeration System</h3>	
 					<p class="text-white-50"> The MERN stack authentication system uses a User model as the data structure that stores the user's credentials as email and password, it uses the mongoose library schema. After the user signs in, bcrypt js is used to encrypt the password before it is stored in the database. And there are also several checks such as if the user already exists or he has entered an email in the wrong format. </p>
 
-				<h3 class="text-white mb-4">Decentralised Data Storage System</h3>
-
 				<h3 class="text-white mb-4">Fitbit FHiR API & Visualisations</h3>
+					<span class="text-white mb-4">
+						<h6 class="text-white mb-4">Authenticating users' Fitbit data</h6>
+							<span class="text-white mb-4">The first part is to check if the user allows the web application to use 
+								his Fitbit data, this allows him to check what kinds of data he wants to share with FHiR FLI and what he doesn't want 
+								to share <br><br>
+								<img src="img/fitbit auth.png" alt="Fitbit auth" height="420" width="420" class="centerme"><br><br>
 
-				<h3 class="text-white mb-4">Docker</h3>
+								This was mainly implmented through the <strong>fitbit-node</strong> JS library
+							</span>
+
+					</span>
 
 				<h3 class="text-white mb-4">Front-end design</h3>
 		</div>

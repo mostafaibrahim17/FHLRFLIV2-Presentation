@@ -35,7 +35,7 @@
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 		  <ul class="navbar-nav ml-auto">
 			<li class="nav-item">
-			  <a class="nav-link js-scroll-trigger" href="index.html">About</a>
+			  <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
 			</li>
 			<li class="nav-item">
 			  <a class="nav-link js-scroll-trigger" href="Research.html">Research</a>
@@ -132,7 +132,13 @@
 					<a href="https://drive.google.com/file/d/1iyewB4Szje-7wCdH8U60-z9ETKcngso0/view?usp=sharing"> Bi-weekly 10</a><br><br>
 
 				<h3 class="text-white mb-4">User manual</h3>
-						<span class="text-white-50">TO DO</span><br><br>
+						<span class="text-white-50">This part is a very brief guide on how to use FHIR FLI 2.0, it will also explain the components
+							of the web application and how they can be used
+
+							<ol>
+								<li></li>
+							</ol>
+						</span><br><br>
 
 				<h3 class="text-white mb-4">Deployment manual</h3>
 					<span class="text-white-50">A very important part of this project was to make this project easy for future
@@ -143,13 +149,36 @@
 			<ol>
 				<li>The first one is deployment through NodeJS and the command line.</li><br>
 					<span class="text-white-50">
+						Several libraries and frameworks must be download first (Pre-requisites):<br><br>
 						<ol>
 							<li>Install NodeJS here <a target="_blank" href="https://nodejs.org/en/download/" >NodeJS Download</a></li>
-							<li>Clone the github repository using git clone <a href="https://github.com/faneggy/fhirfli">https://github.com/faneggy/fhirfli</a></li>
-							<li>Navigate to the repository using the command line and type npm install to install the required packages</li>
-							<li>Download MongoDB?</li>
+							<li>Clone the github repository using git clone <a href="https://github.com/faneggy/fhirfli">Github FHIR FLI 2.0 </a></li>
+							<li>Navigate to the repository using the command line and type <strong> npm install</strong> to install the required packages</li>
+							<li>Download MongoDB here <a href="https://www.mongodb.com">MongoDB</a></li>
+							<li>Install Java JDK here <a href="https://docs.oracle.com/javase/7/docs/webnotes/install/windows/jdk-installation-windows.html">Java</a></li>
+							<li>Download and extract Apache Drill to /opt/drill/ , Apache Drill can be found at <a href="https://drill.apache.org/download/">Apache Drill</a></li>
+						</ol><br>
+						After that there are 2 options: <br><br>
+						A. either starting the NodeJS server: <br><br>
+						<ol>
+							<li>Run mongod on the terminal to start the mongodb server</li>
+							<li>Navigate to the project directory on the terminal and type <strong>node populate_db.js</strong>to setup the Databse</li>
+							<li>run the script runit.sh on the terminal that sets the environment variables and starts the server</li>
+						</ol><br>
+						B. Deployment through Docker<br><br>
+						
+						<ol>
+							<li>Install Docker here <a href="https://www.docker.com">Docker</a></li>
+							<li>Start Docker on your machine</li>
+							<li>Before starting there is some configuration that is required</li>
+								<ul>
+									<li>Go to the secrets.env file inside the fhirfli file and change and add the docker container's name here<br>
+										( MONGODB_LOCAL=mongodb://(container name):27017/ )
+									</li>
+									<li>Navigate to drill/Dockerfile and make sure the apache drill link is up to date</li>
+								</ul>
+								<li>Navigate to the project directory and type <strong>docker-compose up</strong> on the terminal</li>
 						</ol>
-
 					</span>
 			</ol>
 			</span><br><br>

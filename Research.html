@@ -35,7 +35,7 @@
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 		  <ul class="navbar-nav ml-auto">
 			<li class="nav-item">
-			  <a class="nav-link js-scroll-trigger" href="index.html">About</a>
+			  <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
 			</li>
 			<li class="nav-item">
 			  <a class="nav-link js-scroll-trigger" href="Research.html">Research</a>
@@ -134,7 +134,7 @@
 			Finally, there is no need of several people/users managing the blockchain database and this isn’t a feasible solution,
 				in this case we only need one server/entity managing the database which aligns with the regular database implementation.<br><br>
 
-		<img src="img/Unknown.png" alt="pic" height="320" width="320" class="img-fluid" >
+		<img src="img/Unknown.png" alt="pic" height="320" width="320" class="centerme" >
 		</span><br><br>
 
 		<!-- Fitbit requirement  -->
@@ -149,7 +149,7 @@
 			The Fitbit Web API mainly relies on OAuth 2.0 framework which essentially asks the Fitbit user whether they give consent to FHIR FLI 2.0 to use their personal Fitbit data or not.
 			In some cases specifying exactly what kind of data will be used by FHIR FLI. Here is the main gist of Authorization Code Grant Flow used by OAuth 2.0. <br><br>
 
-			<img src="img/Authorization_Code_Flow.png" alt="pic" height="720" width="620" class="img-fluid" ><br>
+			<img src="img/Authorization_Code_Flow.png" alt="pic" height="720" width="620" class="centerme" ><br>
 			 <span style="color:#729E9D; font-weight:bold"> [5]</span> <br><br>
 
 			<h7 class="text-white mb-4"><span style="color:#729E9D; font-weight:bold"></span> Converting Fitbit data to FHiR format & Storing it </h7><br><br>
@@ -169,35 +169,24 @@
 			(as their are several variations) and according to our database FHiR data model they were almost identical.<br><br>
 			
 			<img src="img/FHIRHL7.png" alt="pic" height="720" width="720" class="img-fluid" ><br>
-			<img src="img/FHIR.png" alt="pic" height="520" width="720" class="img-fluid" ><br>
-
-
-		</p>
-
-		<!-- Front-end requirement -->
-		<h5 class="text-white mb-4"><span style="color:#729E9D; font-weight:bold">3.</span> Front-end Design.</h5>
-		<p class="text-white-50"> The 3 main technologies considered for the front-end framework were Vue JS, React JS & Angular JS.
-			We also considered several factors that will go into the front-end User Interface and User Experience such that the fact
-		that it will be main an interactive user dashboard that the user will use daily for signing in and checking
-		his health statistics.
+			<img src="img/FHIR.png" alt="pic" height="520" width="720" class="img-fluid" ><br><br><br>
+			<h7 class="text-white mb-4"><span style="color:#729E9D; font-weight:bold"></span> Fitbit NodeJS Libraries </h7><br><br>
 			
-					<!-- * REACT
+				<span class="text-white-50 text">
+				We considered and implemented these 2 libraries:<br><br>
+				
+					<a href="https://www.npmjs.com/package/passport-fitbit-oauth2">passport-fitbit-oauth2</a><br>
+					<a href="https://www.npmjs.com/package/fitbit-node">fitbit-node</a><br><br>
+				
+				However, after several attempts we discovered that passport-fitbit-oauth2 is intended for making users login completely
+				with their Fitbit accounts instead of just authenticating the use of their data which is why we switched to fitbit-node.
+			</span>
+				
 
-			* PROS:
-
-			* Virtual DOM and responsive UI 
-					* will boost the core part of our health data dashboard
-			* Very active community on Github and support by large organisations 
-					* will remain active for a relatively long time 
-
-			* Cons:
-			* React is a library not a framework, with fairly complex system of components
-					* that will extend the development time -->
-		</p>
-
+		
 	
 		<h4 class="text-white mb-4">References</h4>
-		<p class="text-white-50"> 
+		<span class="text-white-50"> 
 		[1] <a href="https://www.coindesk.com/information/what-is-the-difference-blockchain-and-database?fbclid=IwAR2VzdEXHArqYUhOsHhXEi_xpeZB7pMfBPlV2e9PUoZfSLk5r0KSAxds8AA">CoinDesk</a><br>
 		[2] <a href="https://coinsutra.com/blockchain-vs-database/">Coinsutra</a><br>
 		[3] <a href="https://hackernoon.com/blockchains-versus-traditional-databases-c1a728159f79">Hackernoon</a><br>
@@ -209,9 +198,9 @@
 		[9] <a href="https://solid.inrupt.com/how-it-works">Solid Inrupt</a> <br> 
 		
 
-		
-
-		</p>
+		</span>
+</p>
+		</span>
 </div>
 </div>
 </div>
