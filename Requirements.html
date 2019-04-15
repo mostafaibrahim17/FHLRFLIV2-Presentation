@@ -91,8 +91,8 @@
 
 			<h4 style="color:white;">MoSCoW Requirements List</h4><br>
 
-			<h5 style="color:white;">Must</h5>
-				<ul style="color:grey;">
+			<!-- <h5 style="color:white;">Must</h5> -->
+				<!-- <ul style="color:grey;">
 					<li>The system must have a fully working authentication system where users 2 types of users can signup and sign in</li>
 					<ul><li>Corporate users</li><li>Individual users</li></ul><br>
 					<li>The system must be able to query data from the Fitbit API</li>
@@ -103,321 +103,35 @@
 					<li>The design of the login page and the signup page must be improved (from FHiR Fli 1.0)</li>
 					<li>The system must be able to store the FHiR data in a database either locally or a decentralized database</li>
 					<li>Their must be a custom made API to grab the data from the database and represent the weekly statistics as graphs such as</li>
-					<ul><li>BrushLineGraph for Weight & BMI</li><li>Barchart for average heart rate in certain ranges</li></ul>
+					<ul><li>BrushLineGraph for Weight & BMI</li><li>Barchart for average heart rate in certain ranges</li></ul> -->
 					<!-- <ul><li>Line graph</li><li>Goal Rings</li><li>Line Graph</li><li>Bar Graph</li><li>Doughnut visualization</li><li>Clock View</li></li></ul> -->
 					<!-- <li>The data must be real-time data, i.e it must be refreshed every short period of time</li> -->
-				</ul><br>
-
+				<!-- </ul><br> -->
+				
+				<img src="img/Requirements.png" alt="pic" height="1080" width="1020" class="req2"  ><br><br>
 			
-			<h5 style="color:white;">Should</h5>
+			
+			<!-- <h5 style="color:white;">Should</h5>
 			
 				<ul style="color:grey;">
-					<li>Personlized dashboard according to the personality of the user</li>
+					<li>Personlized dashboard according to the personality of the user</li> -->
 					<!-- <p style="color:#729E9D;">The user will be presented with a set of personality questions that will determine what information that user prefers to see and cares about and therefore according to his answers, some information will be filtered out and some will be highlighted</p> -->
 					
-					<li>More complex and decentralized user data storage system using Solid</li>
+					<!-- <li>More complex and decentralized user data storage system using Solid</li> -->
 
 					<!-- <p style="color:#729E9D;">This can help making storing the users data much more efficient and gives users the ownership of data due to the fact that Solid inrupt offers decentralized databases.</p> -->
 
-				</ul>
+				<!-- </ul> -->
 
-				<h5 style="color:white;">Could</h5>
+				<!-- <h5 style="color:white;">Could</h5> -->
 
-				<ul style="color:grey;">
-					<li>Implement Docker containers to make deployment easier for future development</li>
+				<!-- <ul style="color:grey;"> -->
+					<!-- <li>Implement Docker containers to make deployment easier for future development</li>
 
 						<p style="color:grey;">Deploying this web application and getting it running to start developing it can be tricky and very time-consuming, and so an excellent idea would be to implement a docker container that makes deployment much more simple.</p>
-				</ul>
+				</ul> -->
 
-				<h4 style="color:white;">Persona</h4><br>
-				<img src="img/persona.png" height="1280" width="920" class="img-fluid" alt=""><br><br><br>
-
-				<h4 style="color:white;">Use cases</h4><br>
-
-				<!-- Use case 1 -->
-				<table style="color:white;" class="table-bordered">
-				  <thead style="color:#729E9D;">
-				    <tr>
-				      <th>Use Case Name</th>
-				      <th>Find User Registeration Form<br /> <strong>Use Case 1</strong></th>
-				    </tr>
-				  </thead>
-				  <tbody>
-				    <tr>
-				      <td>Description</td>
-				      <td>A user open the FHIR FLI web application to sign up.</td>
-				    </tr>
-				    <tr>
-				      <td>Primary Actors</td>
-				      <td>User</td>
-				    </tr>
-				    <tr>
-				      <td>Secondary Actors</td>
-				      <td>System</td>
-				    </tr>
-				    <tr>
-				      <td>Pre-conditions</td>
-				      <td>None</td>
-				    </tr>
-				    <tr>
-				      <td>Main Flow</td>
-				      <td><strong>1.</strong> User presses on the "Go To Individual Sign In" button at the bottom-right corner of the screen or presses on the "Go To Corporate Sign In" button at the bottom-left corner of the screen <br /><strong>2.</strong> User click the "Sign Up" button at the screen center <br /><strong>3.</strong> User enters his email and password <br />4.</strong> User presses register and his done.</td>
-				    </tr>
-				    <tr>
-				      <td>Post-Conditions</td>
-				      <td>None</td>
-				    </tr>
-				    <tr>
-				      <td>Alternative Flow</td>
-				      <td>None</td>
-				    </tr>
-				  </tbody>
-				</table>
-
-				<br><br>
-
-				<!-- Use case 2 -->
-				<table style="color:white;" class="table-bordered">
-				  <thead>
-				    <tr>
-				      <th>Use Case Name</th>
-				      <th>Find User Login part<br /> <strong>Use Case 2</strong></th>
-				    </tr>
-				  </thead>
-				  <tbody>
-				    <tr>
-				      <td>Description</td>
-				      <td>A user open the FHIR FLI web application to sign in.</td>
-				    </tr>
-				    <tr>
-				      <td>Primary Actors</td>
-				      <td>User</td>
-				    </tr>
-				    <tr>
-				      <td>Secondary Actors</td>
-				      <td>System</td>
-				    </tr>
-				    <tr>
-				      <td>Pre-conditions</td>
-				      <td>None</td>
-				    </tr>
-				    <tr>
-				      <td>Main Flow</td>
-				      <td><strong>1.</strong> User presses on the "Go To Individual Sign In" button at the bottom-right corner of the screen or presses on the "Go To Corporate Sign In" button at the bottom-left corner of the screen <br /><strong>2.</strong> User enter his credentials, his email and password <br />3.</strong> User presses sign in and his done.</td>
-				    </tr>
-				    <tr>
-				      <td>Post-Conditions</td>
-				      <td>None</td>
-				    </tr>
-				    <tr>
-				      <td>Alternative Flow</td>
-				      <td>None</td>
-				    </tr>
-				  </tbody>
-				</table>
-
-				<!-- Use case 3 -->
-				<table style="color:white;" class="table-bordered">
-				  <thead>
-				    <tr>
-				      <th>Use Case Name</th>
-				      <th>Find User Login part<br /> <strong>Use Case 3</strong></th>
-				    </tr>
-				  </thead>
-				  <tbody>
-				    <tr>
-				      <td>Description</td>
-				      <td>Organisation wants to log in</td>
-				    </tr>
-				    <tr>
-				      <td>Primary Actors</td>
-				      <td>User</td>
-				    </tr>
-				    <tr>
-				      <td>Secondary Actors</td>
-				      <td>System</td>
-				    </tr>
-				    <tr>
-				      <td>Pre-conditions</td>
-				      <td>None</td>
-				    </tr>
-				    <tr>
-				      <td>Main Flow</td>
-							<td><strong>1.</strong> User presses on the "Go To Individual Sign In" button at the bottom-right corner of the screen or presses on 
-								the "Go To Corporate Sign In" button at the bottom-left corner of the screen <br />
-								<strong>2.</strong> User enter his credentials, his email and password <br />
-								3.</strong> User presses sign in and his done.</td>
-				    </tr>
-				    <tr>
-				      <td>Post-Conditions</td>
-				      <td>None</td>
-				    </tr>
-				    <tr>
-				      <td>Alternative Flow</td>
-				      <td>None</td>
-				    </tr>
-				  </tbody>
-				</table>
-
-				<table style="color:white;" class="table-bordered">
-				  <thead>
-				    <tr>
-				      <th>Use Case Name</th>
-				      <th>Find User Login part<br /> <strong>Use Case 2</strong></th>
-				    </tr>
-				  </thead>
-				  <tbody>
-				    <tr>
-				      <td>Description</td>
-				      <td>A user open the FHIR FLI web application to sign in.</td>
-				    </tr>
-				    <tr>
-				      <td>Primary Actors</td>
-				      <td>User</td>
-				    </tr>
-				    <tr>
-				      <td>Secondary Actors</td>
-				      <td>System</td>
-				    </tr>
-				    <tr>
-				      <td>Pre-conditions</td>
-				      <td>None</td>
-				    </tr>
-				    <tr>
-				      <td>Main Flow</td>
-				      <td><strong>1.</strong> User presses on the "Go To Individual Sign In" button at the bottom-right corner of the screen or presses on the "Go To Corporate Sign In" button at the bottom-left corner of the screen <br /><strong>2.</strong> User enter his credentials, his email and password <br />3.</strong> User presses sign in and his done.</td>
-				    </tr>
-				    <tr>
-				      <td>Post-Conditions</td>
-				      <td>None</td>
-				    </tr>
-				    <tr>
-				      <td>Alternative Flow</td>
-				      <td>None</td>
-				    </tr>
-				  </tbody>
-				</table>
-
-				<table style="color:white;" class="table-bordered">
-				  <thead>
-				    <tr>
-				      <th>Use Case Name</th>
-				      <th>Find User Login part<br /> <strong>Use Case 2</strong></th>
-				    </tr>
-				  </thead>
-				  <tbody>
-				    <tr>
-				      <td>Description</td>
-				      <td>A user open the FHIR FLI web application to sign in.</td>
-				    </tr>
-				    <tr>
-				      <td>Primary Actors</td>
-				      <td>User</td>
-				    </tr>
-				    <tr>
-				      <td>Secondary Actors</td>
-				      <td>System</td>
-				    </tr>
-				    <tr>
-				      <td>Pre-conditions</td>
-				      <td>None</td>
-				    </tr>
-				    <tr>
-				      <td>Main Flow</td>
-				      <td><strong>1.</strong> User presses on the "Go To Corporate Sign In" button at the bottom-right corner of the screen or presses on 
-								the "Go To Corporate Sign In" button at the bottom-left corner of the screen <br />
-								<strong>2.</strong> User enter his credentials, his email and password <br />
-								3.</strong> User presses sign in and his done.</td>
-				    </tr>
-				    <tr>
-				      <td>Post-Conditions</td>
-				      <td>None</td>
-				    </tr>
-				    <tr>
-				      <td>Alternative Flow</td>
-				      <td>None</td>
-				    </tr>
-				  </tbody>
-				</table>
-
-				<table style="color:white;" class="table-bordered">
-				  <thead>
-				    <tr>
-				      <th>Use Case Name</th>
-				      <th>Find User Login part<br /> <strong>Use Case 2</strong></th>
-				    </tr>
-				  </thead>
-				  <tbody>
-				    <tr>
-				      <td>Description</td>
-				      <td>A user open the FHIR FLI web application to sign in.</td>
-				    </tr>
-				    <tr>
-				      <td>Primary Actors</td>
-				      <td>User</td>
-				    </tr>
-				    <tr>
-				      <td>Secondary Actors</td>
-				      <td>System</td>
-				    </tr>
-				    <tr>
-				      <td>Pre-conditions</td>
-				      <td>None</td>
-				    </tr>
-				    <tr>
-				      <td>Main Flow</td>
-				      <td><strong>1.</strong> User presses on the "Go To Individual Sign In" button at the bottom-right corner of the screen or presses on the "Go To Corporate Sign In" button at the bottom-left corner of the screen <br /><strong>2.</strong> User enter his credentials, his email and password <br />3.</strong> User presses sign in and his done.</td>
-				    </tr>
-				    <tr>
-				      <td>Post-Conditions</td>
-				      <td>None</td>
-				    </tr>
-				    <tr>
-				      <td>Alternative Flow</td>
-				      <td>None</td>
-				    </tr>
-				  </tbody>
-				</table>
-
-				<table style="color:white;" class="table-bordered">
-				  <thead>
-				    <tr>
-				      <th>Use Case Name</th>
-				      <th>Find User Login part<br /> <strong>Use Case 2</strong></th>
-				    </tr>
-				  </thead>
-				  <tbody>
-				    <tr>
-				      <td>Description</td>
-				      <td>A user open the FHIR FLI web application to sign in.</td>
-				    </tr>
-				    <tr>
-				      <td>Primary Actors</td>
-				      <td>User</td>
-				    </tr>
-				    <tr>
-				      <td>Secondary Actors</td>
-				      <td>System</td>
-				    </tr>
-				    <tr>
-				      <td>Pre-conditions</td>
-				      <td>None</td>
-				    </tr>
-				    <tr>
-				      <td>Main Flow</td>
-				      <td><strong>1.</strong> User presses on the "Go To Individual Sign In" button at the bottom-right corner of the screen or presses on the "Go To Corporate Sign In" button at the bottom-left corner of the screen <br /><strong>2.</strong> User enter his credentials, his email and password <br />3.</strong> User presses sign in and his done.</td>
-				    </tr>
-				    <tr>
-				      <td>Post-Conditions</td>
-				      <td>None</td>
-				    </tr>
-				    <tr>
-				      <td>Alternative Flow</td>
-				      <td>None</td>
-				    </tr>
-				  </tbody>
-				</table>
-
+				
 		  </div>
 		</div>
 	  </div>

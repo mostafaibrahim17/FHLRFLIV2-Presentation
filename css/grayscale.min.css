@@ -73,11 +73,54 @@
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
-.center {
-  display: block;
+.center-image {
+  /* display: block; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  text-align: center;
+  /* width: 10%; */
+}
+
+.big {  font-size: 1.3em; } 
+
+.image-left {
+  /* display: block; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  text-align: left;
+  /* width: 10%; */
+}
+
+.image-right {
+  /* display: block; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  text-align: right;
+  /* width: 10%; */
+}
+
+
+.req {
+  display: inline;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 125%;
+}
+
+.req2 {
+  display: block;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 110%;
+}
+
+.nums {
+  display: block;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .custrom {
