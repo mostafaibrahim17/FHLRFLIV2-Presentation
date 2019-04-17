@@ -152,35 +152,7 @@
 			<img src="img/Authorization_Code_Flow.png" alt="pic" height="720" width="620" class="centerme" ><br>
 			 <span style="color:#729E9D; font-weight:bold"> [5]</span> <br><br>
 
-			<h7 class="text-white mb-4"><span style="color:#729E9D; font-weight:bold"></span> Converting Fitbit data to FHiR format & Storing it </h7><br><br>
-			<span><strong>What is FHiR</strong></span><br>
-			"Fast Healthcare Interoperability Resources Specification, which is a standard for exchanging healthcare information electronically."
-			<span style="color:#729E9D; font-weight:bold"> [6]</span> <br>
-			Basically, FHiR is a format that most modern health organisations has agreed upon for sharing electronical health data, FHiR has recently become very popular
-			and it a core part of our project.<br><br>
-
-			<span><strong>Converting the data</strong></span><br>
-			After thorough research, we managed to find a Fitbit-FHiR-Converter that was developed in JavaScript. This converter was built on a famous open-source NodeJS
-			library called data-model-mapper-plus which is used to to map (and revert mapping) data objects into another (specified) data model
-			 <span style="color:#729E9D; font-weight:bold"> [7]</span> <br><br>
-			A FHiR database data model was developed according to the FHiR standards such that we would be able to query the database for 
-			data to generate data visualisations, when we use the converter,
-			we had to make sure that the result of the converter was the same as the current FHiR data models 
-			(as their are several variations) and according to our database FHiR data model they were almost identical.<br><br>
 			
-			<img src="img/FHIRHL7.png" alt="pic" height="720" width="720" class="img-fluid" ><br>
-			<img src="img/FHIR.png" alt="pic" height="520" width="720" class="img-fluid" ><br><br><br>
-			<h7 class="text-white mb-4"><span style="color:#729E9D; font-weight:bold"></span> Fitbit NodeJS Libraries </h7><br><br>
-			
-				<span class="text-white-50 text">
-				We considered and implemented these 2 libraries:<br><br>
-				
-					<a href="https://www.npmjs.com/package/passport-fitbit-oauth2">passport-fitbit-oauth2</a><br>
-					<a href="https://www.npmjs.com/package/fitbit-node">fitbit-node</a><br><br>
-				
-				However, after several attempts we discovered that passport-fitbit-oauth2 is intended for making users login completely
-				with their Fitbit accounts instead of just authenticating the use of their data which is why we switched to fitbit-node.
-			</span>
 				
 
 		

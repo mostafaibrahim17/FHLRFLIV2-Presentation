@@ -83,6 +83,13 @@
 
 .big {  font-size: 1.3em; } 
 
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
 .image-left {
   /* display: block; */
   /* margin-left: auto; */
