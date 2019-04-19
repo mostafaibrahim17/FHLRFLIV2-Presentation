@@ -9,6 +9,9 @@
   padding: 15px;
 }
 
+table {
+  border: 1px solid #729E9D;
+}
 
 /* The sidebar menu */
 .sidebar {
