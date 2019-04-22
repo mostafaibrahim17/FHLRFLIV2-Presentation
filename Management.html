@@ -150,7 +150,10 @@
 					developers to set up and get started to work with as fast as possible, that is why we made sure that our code
 				is properly commented and documented, and also we had Docker containers set up for making deployment much more
 			quicker. Thus, there are 2 options for deployment that will be explained.<br><br>
-						
+			The fitbit API Settings must be set correctly at backend/auth/fitbit (client secret, clientID and app secret)
+			those are grabbed from the fitbit API settings website. Moreover FHIRFLI2 vm must be running the mongodb server 
+			Otherwise change the mongodb connection in the runit.sh script <br><br>
+
 			On a Ubuntu LTS 18.04 vm, through terminal commands
 
 						<ol>
@@ -161,8 +164,9 @@
 								<li>"sudo apt install npm"</li>
 								<li>"git clone https://github.com/faneggy/fhirfli.git"</li>
 								<li>navigate to the directory fhirfli/FHiRVisualization-master/ and type "npm install"</li>
-								<li>type "npm rebuilt node-sass"</li>
+								<li>type "npm rebuild node-sass"</li>
 								<li>navigate to the directory fhirfli/FHiRVisualization-master/ and type "sudo ./runit.sh"</li>
+								Done! server should be running on https
 
 						</ol>
 
