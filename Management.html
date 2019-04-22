@@ -151,11 +151,29 @@
 				is properly commented and documented, and also we had Docker containers set up for making deployment much more
 			quicker. Thus, there are 2 options for deployment that will be explained.<br><br>
 						
+			On a Ubuntu LTS 18.04 vm, through terminal commands
+
+						<ol>
+								<li>type "sudo apt-get upgrade"</li>
+								<li>type "sudo apt-get update"</li>
+								<li>type "sudo apt update"</li>
+								<li>type "sudo apt update"</li>
+								<li>"sudo apt install npm"</li>
+								<li>"git clone https://github.com/faneggy/fhirfli.git"</li>
+								<li>navigate to the directory fhirfli/FHiRVisualization-master/ and type "npm install"</li>
+								<li>type "npm rebuilt node-sass"</li>
+								<li>navigate to the directory fhirfli/FHiRVisualization-master/ and type "sudo ./runit.sh"</li>
+
+						</ol>
+
+						Otherwise: <br><br>
 			<ol>
 				<li>The first one is deployment through NodeJS and the command line.</li><br>
 					<span class="text-white-50">
+						
 						Several libraries and frameworks must be download first (Pre-requisites):<br><br>
 						<ol>
+							
 							<li>Install NodeJS here <a target="_blank" href="https://nodejs.org/en/download/" >NodeJS Download</a></li>
 							<li>Clone the github repository using git clone <a href="https://github.com/faneggy/fhirfli">Github FHIR FLI 2.0 </a></li>
 							<li>Navigate to the repository using the command line and type <strong> npm install</strong> to install the required packages</li>
